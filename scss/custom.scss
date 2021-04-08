@@ -1,0 +1,117 @@
+$main-red: rgb(221, 41, 41);
+%roboto-regular {
+  font-family: 'Roboto', sans-serif;
+  font-weight: 400;
+}
+%roboto-medium {
+  font-family: 'Roboto', sans-serif;
+  font-weight: 500;
+}
+%center-content {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+body {
+  margin: 0;
+  padding: 0;
+  background-color: rgb(240, 240, 240);
+}
+img {
+  width: 100%;
+}
+
+// START of nav ----------------------------------------------------------------
+.nav {
+  height: 7vh;
+  display: flex;
+  align-items: center;
+}
+#trustLogo {
+  width: 25px;
+  position: absolute;
+  left: 5vw;
+}
+#navIcon {
+  width: 20px;
+  position: absolute;
+  right: 5vw;
+}
+
+// START of temp and knob ------------------------------------------------------
+.temp {
+  // background-color: yellow;
+  height: 17vh;
+  @extend %center-content;
+
+  h1 {
+    @extend %roboto-medium;
+    font-size: 5rem;
+  }
+}
+.knob {
+  // background-color: blue;
+  height: 36vh;
+  @extend %center-content;
+}
+#knob {
+  width: 85%;
+}
+
+// All buttons container
+.cont-buttons {
+  // background-color: yellow;
+  height: 40vh;
+  display: flex;
+  flex-wrap: wrap;
+}
+
+// START of left buttons -------------------------------------------------------
+.cont-left-buttons {
+  // background-color: turquoise;
+  width: 65%;
+  display: flex;
+  flex-wrap: wrap;
+}
+.btn-eco,
+.btn-timer,
+.btn-off {
+  // background-color: purple;
+  height: 15vh;
+  width: 20vw;
+  @extend %center-content;
+  margin: 0 2vw 0 7vw;
+}
+#ecoIcon{
+  width: 30vw;
+}
+#timerIcon {
+  width: 32vw;
+}
+
+#offBtn {
+  width: 78%;
+  position: absolute;
+  left: -35px;
+  margin-top: 10vh;
+}
+
+// START of arrow buttons ------------------------------------------------------
+.cont-arrows {
+  // background-color: purple;
+  height: 28vh;
+  width: 27%;
+}
+.btn-arrowUp,
+.btn-arrowDown {
+  width: 85%;
+}
+.btn-arrowUp {
+  filter: drop-shadow(3px 3px 5px rgb(87, 87, 87)) drop-shadow(-3px -3px 5px white);
+}
+.btn-arrowDown {
+  margin-top: 50%;
+  transform: rotate(180deg);
+  filter: drop-shadow(-3px -3px 5px rgb(87, 87, 87)) drop-shadow(3px 3px 5px white);
+}

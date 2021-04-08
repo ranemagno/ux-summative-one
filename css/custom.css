@@ -1,0 +1,91 @@
+.temp h1 {
+  font-family: 'Roboto', sans-serif;
+  font-weight: 500; }
+
+.temp, .knob, .btn-eco,
+.btn-timer,
+.btn-off {
+  display: flex;
+  align-items: center;
+  justify-content: center; }
+
+body {
+  margin: 0;
+  padding: 0;
+  background-color: #f0f0f0; }
+
+img {
+  width: 100%; }
+
+.nav {
+  height: 7vh;
+  display: flex;
+  align-items: center; }
+
+#trustLogo {
+  width: 25px;
+  position: absolute;
+  left: 5vw; }
+
+#navIcon {
+  width: 20px;
+  position: absolute;
+  right: 5vw; }
+
+.temp {
+  height: 17vh; }
+  .temp h1 {
+    font-size: 5rem; }
+
+.knob {
+  height: 36vh; }
+
+#knob {
+  width: 85%; }
+
+.cont-buttons {
+  height: 40vh;
+  display: flex;
+  flex-wrap: wrap; }
+
+.cont-left-buttons {
+  width: 65%;
+  display: flex;
+  flex-wrap: wrap; }
+
+.btn-eco,
+.btn-timer,
+.btn-off {
+  height: 15vh;
+  width: 20vw;
+  margin: 0 2vw 0 7vw; }
+
+#ecoIcon {
+  width: 30vw; }
+
+#timerIcon {
+  width: 32vw; }
+
+#offBtn {
+  width: 78%;
+  position: absolute;
+  left: -35px;
+  margin-top: 10vh; }
+
+.cont-arrows {
+  height: 28vh;
+  width: 27%; }
+
+.btn-arrowUp,
+.btn-arrowDown {
+  width: 85%; }
+
+.btn-arrowUp {
+  filter: drop-shadow(3px 3px 5px #575757) drop-shadow(-3px -3px 5px white); }
+
+.btn-arrowDown {
+  margin-top: 50%;
+  transform: rotate(180deg);
+  filter: drop-shadow(-3px -3px 5px #575757) drop-shadow(3px 3px 5px white); }
+
+/*# sourceMappingURL=custom.css.map */
