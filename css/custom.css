@@ -2,16 +2,30 @@
   font-family: 'Roboto', sans-serif;
   font-weight: 500; }
 
-.temp, .cont-knob, .cont-eco,
-.cont-timer {
+.temp, .cont-knob {
   display: flex;
   align-items: center;
   justify-content: center; }
 
+.btn-eco,
+.btn-timer,
+.btn-power,
+.btn-arrow-up {
+  filter: drop-shadow(3px 3px 5px #575757) drop-shadow(-3px -3px 5px white); }
+
+html {
+  height: 100%;
+  overflow-x: hidden;
+  overflow-y: hidden; }
+
 body {
+  background-color: #f0f0f0;
+  height: 100%;
   margin: 0;
   padding: 0;
-  background-color: #f0f0f0; }
+  position: relative;
+  overflow-x: hidden;
+  overflow-y: hidden; }
 
 img {
   width: 100%; }
@@ -43,47 +57,57 @@ img {
   width: 85%; }
 
 .cont-buttons {
-  height: 40vh;
   display: flex;
-  flex-wrap: wrap; }
+  flex-wrap: wrap;
+  height: 40%;
+  padding-top: 5%; }
 
 .cont-left-buttons {
-  width: 65%;
   display: flex;
-  flex-wrap: wrap; }
+  flex-wrap: wrap;
+  width: 65%;
+  height: 70%;
+  padding-left: 5%; }
 
 .cont-eco,
 .cont-timer {
-  background-color: purple;
-  height: 15vh;
-  width: 20vw;
-  margin: 0 2vw 0 7vw; }
+  display: flex;
+  justify-content: center;
+  width: 45%;
+  height: 50%;
+  margin: 0; }
 
 .btn-eco,
 .btn-timer {
-  width: 30vw; }
+  width: 55%;
+  margin-top: 25%; }
 
-.btn-off {
-  width: 78%;
-  position: absolute;
-  left: -35px;
-  margin-top: 10vh; }
+.cont-power {
+  width: 100%;
+  height: 30%;
+  padding: 10% 0 0 10%; }
+
+.btn-power {
+  width: 77%; }
 
 .cont-arrows {
-  background-color: purple;
-  height: 28vh;
-  width: 27%; }
+  height: 60%;
+  width: 25%;
+  padding: 12% 0 0 0; }
 
-.btn-arrowUp,
-.btn-arrowDown {
-  width: 85%; }
+.btn-arrow-up,
+.btn-arrow-down {
+  width: 80%; }
 
-.btn-arrowUp {
-  filter: drop-shadow(3px 3px 5px #575757) drop-shadow(-3px -3px 5px white); }
-
-.btn-arrowDown {
+.btn-arrow-down {
   margin-top: 50%;
   transform: rotate(180deg);
   filter: drop-shadow(-3px -3px 5px #575757) drop-shadow(3px 3px 5px white); }
+
+.cls-1 {
+  fill: #ededed;
+  stroke: #fff;
+  stroke-miterlimit: 10;
+  stroke-width: 2.33px; }
 
 /*# sourceMappingURL=custom.css.map */

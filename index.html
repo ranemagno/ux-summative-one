@@ -1,5 +1,8 @@
 <!DOCTYPE html>
 <html lang="en">
+
+<!-- need trust logo, nav icon, plain/off icons -->
+
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -30,20 +33,37 @@
   <div class="cont-buttons">
     <div class="cont-left-buttons">
       <div class="cont-eco">
-        <img src="graphics/White Eco.svg" alt="Eco Button" class="btn-eco">
+        <img src="graphics/Red Eco.svg" alt="Eco Button" class="btn-eco" id="btnRedEco">
+        <img src="graphics/White Eco.svg" alt="Eco Button" class="btn-eco" id="btnWhiteEco">
       </div>
       <div class="cont-timer">
-        <img src="graphics/White Timer.svg" alt="Timer Button" class="btn-timer">
+        <img src="graphics/Red Timer.svg" alt="Timer Button" class="btn-timer" id="btnRedTimer">
+        <img src="graphics/White Timer.svg" alt="Timer Button" class="btn-timer" id="btnWhiteTimer">
       </div>
-      <img src="graphics/White Turn Off.svg" alt="Off Button" class="btn-off">
+      <div class="cont-power">
+        <img src="graphics/Red Turn On.svg" alt="Off Button" class="btn-power" id="btnPowerOn">
+        <img src="graphics/White Turn Off.svg" alt="Off Button" class="btn-power" id="btnPowerOff">
+      </div>
     </div>
+    <!-- END of container for left buttons -->
 
     <div class="cont-arrows">
-      <img src="graphics/White Arrow.svg" alt="Arrow Up" class="btn-arrowUp">
-      <img src="graphics/White Arrow.svg" alt="Arrow Up" class="btn-arrowDown">
+      <svg id="Arrow_Button_Up" data-name="Arrow Button" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 496.37 447.33" class="btn-arrow-up">
+        <path class="cls-1" d="M192.22,33.48c24.88-43.08,87.06-43.08,111.93,0L395.3,191.35l91.15,157.88c24.87,43.08-6.22,96.94-56,96.94H65.88c-49.74,0-80.83-53.86-56-96.94l91.15-157.88Z"/>
+      </svg>
+      <svg id="Arrow_Button_Down" data-name="Arrow Button" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 496.37 447.33" class="btn-arrow-down">
+        <path class="cls-1" d="M192.22,33.48c24.88-43.08,87.06-43.08,111.93,0L395.3,191.35l91.15,157.88c24.87,43.08-6.22,96.94-56,96.94H65.88c-49.74,0-80.83-53.86-56-96.94l91.15-157.88Z"/>
+      </svg>
     </div>
 
   </div>
 
+
+
+  <!-- scripts -->
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/2.2.4/jquery.min.js"></script>
+  <script src="js/scripts.js">
+
+  </script>
 </body>
 </html>

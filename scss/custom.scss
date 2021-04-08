@@ -12,11 +12,24 @@ $main-red: rgb(221, 41, 41);
   align-items: center;
   justify-content: center;
 }
+%drop-shadow {
+  filter: drop-shadow(3px 3px 5px rgb(87, 87, 87)) drop-shadow(-3px -3px 5px white);
+}
 
+
+html {
+  height: 100%;
+  overflow-x: hidden;
+  overflow-y: hidden;
+}
 body {
+  background-color: rgb(240, 240, 240);
+  height: 100%;
   margin: 0;
   padding: 0;
-  background-color: rgb(240, 240, 240);
+  position: relative;
+  overflow-x: hidden;
+  overflow-y: hidden;
 }
 img {
   width: 100%;
@@ -62,53 +75,75 @@ img {
 // All buttons container
 .cont-buttons {
   // background-color: yellow;
-  height: 40vh;
   display: flex;
   flex-wrap: wrap;
+  height: 40%;
+  padding-top: 5%;
 }
 
 // START of left buttons -------------------------------------------------------
 .cont-left-buttons {
   // background-color: turquoise;
-  width: 65%;
   display: flex;
   flex-wrap: wrap;
+  width: 65%;
+  height: 70%;
+  padding-left: 5%;
 }
 .cont-eco,
 .cont-timer {
-  background-color: purple;
-  height: 15vh;
-  width: 20vw;
-  @extend %center-content;
-  margin: 0 2vw 0 7vw;
+  // background-color: green;
+  display: flex;
+  justify-content: center;
+  width: 45%;
+  height: 50%;
+  margin: 0;
 }
 .btn-eco,
 .btn-timer {
-  width: 30vw;
+  width: 55%;
+  margin-top: 25%;
 }
-
-.btn-off {
-  width: 78%;
-  position: absolute;
-  left: -35px;
-  margin-top: 10vh;
+.cont-power {
+  // background-color: yellow;
+  width: 100%;
+  height: 30%;
+  padding: 10% 0 0 10%;
+}
+.btn-power {
+  width: 77%;
 }
 
 // START of arrow buttons ------------------------------------------------------
 .cont-arrows {
-  background-color: purple;
-  height: 28vh;
-  width: 27%;
+  // background-color: purple;
+  height: 60%;
+  width: 25%;
+  padding: 12% 0 0 0;
 }
-.btn-arrowUp,
-.btn-arrowDown {
-  width: 85%;
+.btn-arrow-up,
+.btn-arrow-down {
+  width: 80%;
 }
-.btn-arrowUp {
-  filter: drop-shadow(3px 3px 5px rgb(87, 87, 87)) drop-shadow(-3px -3px 5px white);
+
+// Button Styling --------------------------------------------------------------
+.btn-eco,
+.btn-timer,
+.btn-power,
+.btn-arrow-up {
+  @extend %drop-shadow;
 }
-.btn-arrowDown {
+.btn-arrow-down {
   margin-top: 50%;
   transform: rotate(180deg);
   filter: drop-shadow(-3px -3px 5px rgb(87, 87, 87)) drop-shadow(3px 3px 5px white);
+}
+
+
+
+.cls-1 {
+  fill: #ededed;
+  stroke: #fff;
+  stroke-miterlimit: 10;
+  stroke-width:2.33px;
 }
