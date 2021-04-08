@@ -50,12 +50,12 @@ img {
     font-size: 5rem;
   }
 }
-.knob {
+.cont-knob {
   // background-color: blue;
   height: 36vh;
   @extend %center-content;
 }
-#knob {
+.knob {
   width: 85%;
 }
 
@@ -74,23 +74,20 @@ img {
   display: flex;
   flex-wrap: wrap;
 }
-.btn-eco,
-.btn-timer,
-.btn-off {
-  // background-color: purple;
+.cont-eco,
+.cont-timer {
+  background-color: purple;
   height: 15vh;
   width: 20vw;
   @extend %center-content;
   margin: 0 2vw 0 7vw;
 }
-#ecoIcon{
+.btn-eco,
+.btn-timer {
   width: 30vw;
 }
-#timerIcon {
-  width: 32vw;
-}
 
-#offBtn {
+.btn-off {
   width: 78%;
   position: absolute;
   left: -35px;
@@ -99,7 +96,7 @@ img {
 
 // START of arrow buttons ------------------------------------------------------
 .cont-arrows {
-  // background-color: purple;
+  background-color: purple;
   height: 28vh;
   width: 27%;
 }

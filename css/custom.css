@@ -2,9 +2,8 @@
   font-family: 'Roboto', sans-serif;
   font-weight: 500; }
 
-.temp, .knob, .btn-eco,
-.btn-timer,
-.btn-off {
+.temp, .cont-knob, .cont-eco,
+.cont-timer {
   display: flex;
   align-items: center;
   justify-content: center; }
@@ -37,10 +36,10 @@ img {
   .temp h1 {
     font-size: 5rem; }
 
-.knob {
+.cont-knob {
   height: 36vh; }
 
-#knob {
+.knob {
   width: 85%; }
 
 .cont-buttons {
@@ -53,26 +52,25 @@ img {
   display: flex;
   flex-wrap: wrap; }
 
-.btn-eco,
-.btn-timer,
-.btn-off {
+.cont-eco,
+.cont-timer {
+  background-color: purple;
   height: 15vh;
   width: 20vw;
   margin: 0 2vw 0 7vw; }
 
-#ecoIcon {
+.btn-eco,
+.btn-timer {
   width: 30vw; }
 
-#timerIcon {
-  width: 32vw; }
-
-#offBtn {
+.btn-off {
   width: 78%;
   position: absolute;
   left: -35px;
   margin-top: 10vh; }
 
 .cont-arrows {
+  background-color: purple;
   height: 28vh;
   width: 27%; }
 
