@@ -1,3 +1,7 @@
+.nav-pop-out ul {
+  font-family: 'Roboto', sans-serif;
+  font-weight: 400; }
+
 .temp h1 {
   font-family: 'Roboto', sans-serif;
   font-weight: 500; }
@@ -7,7 +11,7 @@
   align-items: center;
   justify-content: center; }
 
-.btn-eco,
+.knob, .btn-eco,
 .btn-timer,
 .btn-power,
 .btn-arrow-up {
@@ -36,14 +40,39 @@ img {
   align-items: center; }
 
 #trustLogo {
-  width: 25px;
   position: absolute;
-  left: 5vw; }
+  top: 20px;
+  left: 20px;
+  width: 5%; }
 
-#navIcon {
-  width: 20px;
+#navBtn {
   position: absolute;
-  right: 5vw; }
+  top: 20px;
+  right: 20px;
+  width: 5%; }
+
+#closeBtn {
+  position: absolute;
+  top: 20px;
+  right: 20px;
+  width: 10%; }
+
+.nav-pop-out {
+  background-color: #dd2929;
+  position: absolute;
+  z-index: 99;
+  top: 0;
+  right: 0;
+  width: 50%;
+  height: 23%;
+  display: flex;
+  align-items: center;
+  border-radius: 0 0 0 30px; }
+  .nav-pop-out ul {
+    line-height: 150%;
+    list-style: none;
+    color: white;
+    text-transform: uppercase; }
 
 .temp {
   height: 17vh; }
@@ -99,15 +128,15 @@ img {
 .btn-arrow-down {
   width: 80%; }
 
-.btn-arrow-down {
-  margin-top: 50%;
-  transform: rotate(180deg);
-  filter: drop-shadow(-3px -3px 5px #575757) drop-shadow(3px 3px 5px white); }
-
 .cls-1 {
   fill: #ededed;
   stroke: #fff;
   stroke-miterlimit: 10;
   stroke-width: 2.33px; }
+
+.btn-arrow-down {
+  margin-top: 50%;
+  transform: rotate(180deg);
+  filter: drop-shadow(-3px -3px 5px #575757) drop-shadow(3px 3px 5px white); }
 
 /*# sourceMappingURL=custom.css.map */

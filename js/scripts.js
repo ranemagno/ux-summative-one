@@ -1,10 +1,20 @@
 $('#btnRedEco').hide();
 $('#btnRedTimer').hide();
 $('#btnPowerOn').hide();
+// $('.nav-pop-out').hide();
+
+
+$('#navBtn').click(function(){
+  $('.nav-pop-out').show();
+});
+$('#closeBtn').click(function(){
+  $('.nav-pop-out').hide();
+});
 
 $('#btnWhiteEco').click(function(){
   $('#btnWhiteEco').hide();
   $('#btnRedEco').show();
+  $('#btnRedEco').css('filter', 'none');
 });
 
 $('#btnRedEco').click(function(){
@@ -15,6 +25,7 @@ $('#btnRedEco').click(function(){
 $('#btnWhiteTimer').click(function(){
   $('#btnWhiteTimer').hide();
   $('#btnRedTimer').show();
+  $('#btnRedTimer').css('filter', 'none');
 });
 
 $('#btnRedTimer').click(function(){

@@ -42,14 +42,43 @@ img {
   align-items: center;
 }
 #trustLogo {
-  width: 25px;
   position: absolute;
-  left: 5vw;
+  top: 20px;
+  left: 20px;
+  width: 5%;
 }
-#navIcon {
-  width: 20px;
+#navBtn {
   position: absolute;
-  right: 5vw;
+  top: 20px;
+  right: 20px;
+  width: 5%;
+}
+#closeBtn {
+  position: absolute;
+  top: 20px;
+  right: 20px;
+  width: 10%;
+}
+
+.nav-pop-out {
+  background-color: $main-red;
+  position: absolute;
+  z-index: 99;
+  top: 0;
+  right: 0;
+  width: 50%;
+  height: 23%;
+  display: flex;
+  align-items: center;
+
+  border-radius: 0 0 0 30px;
+  ul {
+    line-height: 150%;
+    list-style: none;
+    @extend %roboto-regular;
+    color: white;
+    text-transform: uppercase;
+  }
 }
 
 // START of temp and knob ------------------------------------------------------
@@ -70,6 +99,7 @@ img {
 }
 .knob {
   width: 85%;
+  @extend %drop-shadow;
 }
 
 // All buttons container
@@ -116,7 +146,6 @@ img {
 
 // START of arrow buttons ------------------------------------------------------
 .cont-arrows {
-  // background-color: purple;
   height: 60%;
   width: 25%;
   padding: 12% 0 0 0;
@@ -124,6 +153,13 @@ img {
 .btn-arrow-up,
 .btn-arrow-down {
   width: 80%;
+}
+// arrow styles
+.cls-1 {
+  fill: #ededed;
+  stroke: #fff;
+  stroke-miterlimit: 10;
+  stroke-width:2.33px;
 }
 
 // Button Styling --------------------------------------------------------------
@@ -137,13 +173,4 @@ img {
   margin-top: 50%;
   transform: rotate(180deg);
   filter: drop-shadow(-3px -3px 5px rgb(87, 87, 87)) drop-shadow(3px 3px 5px white);
-}
-
-
-
-.cls-1 {
-  fill: #ededed;
-  stroke: #fff;
-  stroke-miterlimit: 10;
-  stroke-width:2.33px;
 }
