@@ -1,6 +1,7 @@
 $('#btnRedEco').hide();
 $('#btnRedTimer').hide();
 $('#btnPowerOn').hide();
+$('#navPopOut').hide();
 // $('.nav-pop-out').hide();
 
 

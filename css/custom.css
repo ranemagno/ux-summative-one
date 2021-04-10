@@ -1,12 +1,10 @@
 .nav-pop-out ul {
-  font-family: 'Roboto', sans-serif;
   font-weight: 400; }
 
 .temp h1 {
-  font-family: 'Roboto', sans-serif;
   font-weight: 500; }
 
-.temp, .cont-knob {
+.temp, .cont-knob, .cont-eco-adjust, .timer-adjust {
   display: flex;
   align-items: center;
   justify-content: center; }
@@ -14,7 +12,7 @@
 .knob, .btn-eco,
 .btn-timer,
 .btn-power,
-.btn-arrow-up {
+.btn-arrow-up, .usage-info img {
   filter: drop-shadow(3px 3px 5px #575757) drop-shadow(-3px -3px 5px white); }
 
 html {
@@ -29,7 +27,8 @@ body {
   padding: 0;
   position: relative;
   overflow-x: hidden;
-  overflow-y: hidden; }
+  overflow-y: hidden;
+  font-family: 'Roboto', sans-serif; }
 
 img {
   width: 100%; }
@@ -138,5 +137,82 @@ img {
   margin-top: 50%;
   transform: rotate(180deg);
   filter: drop-shadow(-3px -3px 5px #575757) drop-shadow(3px 3px 5px white); }
+
+.usage-header,
+.preset-header {
+  margin: 3% 0 0 5%;
+  padding: 0 3% 0 3%;
+  position: absolute;
+  text-transform: uppercase;
+  font-size: .7rem;
+  letter-spacing: .2rem;
+  background-color: #f0f0f0; }
+
+.usage-info {
+  height: 40%;
+  margin-top: 0%;
+  border-top: 1px solid #a3a3a3; }
+  .usage-info img {
+    width: 85%;
+    margin: 15% 0 0 7%; }
+
+.preset-header {
+  margin-top: 5%;
+  padding: 0 3% 0 3%; }
+
+.cont-presets {
+  border-top: 1px solid #a3a3a3;
+  width: 100%;
+  height: 45%;
+  margin-top: 10%; }
+
+.cont-eco-adjust {
+  width: 100%;
+  height: 30%;
+  display: flex;
+  flex-wrap: wrap; }
+  .cont-eco-adjust img {
+    padding: 5%;
+    width: 65%; }
+
+.cont-eco-content {
+  width: 100%;
+  height: 50%;
+  margin: 0 5% 0 5%;
+  display: flex; }
+
+.eco-adjust {
+  width: 100%; }
+  .eco-adjust table, .eco-adjust td {
+    width: 100%;
+    height: 100%; }
+  .eco-adjust td {
+    padding-top: 5%; }
+
+.cont-timer-adjust {
+  width: 100%;
+  height: 59%;
+  display: flex;
+  flex-wrap: wrap; }
+
+.timer-heading {
+  width: 100%;
+  height: 50%;
+  display: flex;
+  flex-wrap: wrap;
+  margin-left: 7%; }
+  .timer-heading img {
+    width: 20%; }
+  .timer-heading p {
+    margin: 14% 0 0 10%; }
+
+.timer-adjust {
+  width: 100%;
+  height: 50%; }
+  .timer-adjust table {
+    margin: 12% 0 0 5%;
+    width: 90%; }
+  .timer-adjust td {
+    padding-bottom: 5%; }
 
 /*# sourceMappingURL=custom.css.map */

@@ -1,10 +1,8 @@
 $main-red: rgb(221, 41, 41);
 %roboto-regular {
-  font-family: 'Roboto', sans-serif;
   font-weight: 400;
 }
 %roboto-medium {
-  font-family: 'Roboto', sans-serif;
   font-weight: 500;
 }
 %center-content {
@@ -30,10 +28,13 @@ body {
   position: relative;
   overflow-x: hidden;
   overflow-y: hidden;
+  font-family: 'Roboto', sans-serif;
+
 }
 img {
   width: 100%;
 }
+
 
 // START of nav ----------------------------------------------------------------
 .nav {
@@ -173,4 +174,110 @@ img {
   margin-top: 50%;
   transform: rotate(180deg);
   filter: drop-shadow(-3px -3px 5px rgb(87, 87, 87)) drop-shadow(3px 3px 5px white);
+}
+
+
+
+
+
+// START OF ECO AND TIMER PAGE STYLING
+
+.usage-header,
+.preset-header {
+  margin: 3% 0 0 5%;
+  padding: 0 3% 0 3%;
+  position: absolute;
+  text-transform: uppercase;
+  font-size: .7rem;
+  letter-spacing: .2rem;
+  background-color: rgb(240, 240, 240);
+}
+.usage-info {
+  // background-color: pink;
+  height: 40%;
+  margin-top: 0%;
+  border-top: 1px solid rgb(163, 163, 163);
+  img {
+    width: 85%;
+    margin: 15% 0 0 7%;
+    @extend %drop-shadow;
+  }
+}
+.preset-header {
+  margin-top: 5%;
+  padding: 0 3% 0 3%;
+}
+.cont-presets {
+  // background-color: blue;
+  border-top: 1px solid rgb(163, 163, 163);
+  width: 100%;
+  height: 45%;
+  margin-top: 10%;
+}
+
+// START of Eco Section
+.cont-eco-adjust{
+  width: 100%;
+  height: 30%;
+  display: flex;
+  flex-wrap: wrap;
+  @extend %center-content;
+  img {
+    padding: 5%;
+    width: 65%;
+  }
+}
+.cont-eco-content {
+  width: 100%;
+  height: 50%;
+  margin: 0 5% 0 5%;
+  display: flex;
+}
+.eco-adjust {
+  width: 100%;
+  table, td {
+    width: 100%;
+    height: 100%;
+  }
+  td {
+    padding-top: 5%;
+  }
+}
+
+// START of Timer Section
+.cont-timer-adjust {
+  // background-color: blue;
+  width: 100%;
+  height: 59%;
+  display: flex;
+  flex-wrap: wrap;
+}
+.timer-heading {
+  // background-color: green;
+  width: 100%;
+  height: 50%;
+  display: flex;
+  flex-wrap: wrap;
+  margin-left: 7%;
+  img {
+    // background-color: yellow;
+    width: 20%;
+  }
+  p {
+    margin: 14% 0 0 10%;
+  }
+}
+.timer-adjust {
+  // background-color: yellow;
+  width: 100%;
+  height: 50%;
+  @extend %center-content;
+  table {
+    margin: 12% 0 0 5%;
+    width: 90%;
+    // border: 1px solid black;
+  }
+  td {
+    padding-bottom: 5%;
+  }
 }
