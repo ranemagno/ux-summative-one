@@ -1,4 +1,5 @@
 $main-red: rgb(221, 41, 41);
+
 %roboto-regular {
   font-weight: 400;
 }
@@ -12,6 +13,13 @@ $main-red: rgb(221, 41, 41);
 }
 %drop-shadow {
   filter: drop-shadow(3px 3px 5px rgb(87, 87, 87)) drop-shadow(-3px -3px 5px white);
+}
+
+@mixin flex-properties($display, $wrap, $vert-align, $hor-align){
+  display: $display;
+  flex: $wrap;
+  align-items: $vert-align;
+  justify-content: $hor-align;
 }
 
 
@@ -39,8 +47,6 @@ img {
 // START of nav ----------------------------------------------------------------
 .nav {
   height: 7vh;
-  display: flex;
-  align-items: center;
 }
 #trustLogo {
   position: absolute;
@@ -69,8 +75,8 @@ img {
   right: 0;
   width: 50%;
   height: 23%;
-  display: flex;
-  align-items: center;
+  @include flex-properties(flex, 0, center, 0);
+
 
   border-radius: 0 0 0 30px;
   ul {
@@ -84,7 +90,6 @@ img {
 
 // START of temp and knob ------------------------------------------------------
 .temp {
-  // background-color: yellow;
   height: 17vh;
   @extend %center-content;
 
@@ -94,7 +99,6 @@ img {
   }
 }
 .cont-knob {
-  // background-color: blue;
   height: 36vh;
   @extend %center-content;
 }
@@ -103,29 +107,25 @@ img {
   @extend %drop-shadow;
 }
 
-// All buttons container
+// All buttons container //
 .cont-buttons {
-  // background-color: yellow;
-  display: flex;
-  flex-wrap: wrap;
+  @include flex-properties(flex, wrap, none, none);
   height: 40%;
   padding-top: 5%;
 }
 
 // START of left buttons -------------------------------------------------------
 .cont-left-buttons {
-  // background-color: turquoise;
   display: flex;
   flex-wrap: wrap;
+  // @include flex-properties(flex, wrap, none, none); this breaks the design
   width: 65%;
   height: 70%;
   padding-left: 5%;
 }
 .cont-eco,
 .cont-timer {
-  // background-color: green;
-  display: flex;
-  justify-content: center;
+  @include flex-properties(flex, none, none, center);
   width: 45%;
   height: 50%;
   margin: 0;
@@ -136,7 +136,6 @@ img {
   margin-top: 25%;
 }
 .cont-power {
-  // background-color: yellow;
   width: 100%;
   height: 30%;
   padding: 10% 0 0 10%;
@@ -155,7 +154,7 @@ img {
 .btn-arrow-down {
   width: 80%;
 }
-// arrow styles
+// arrow styling
 .cls-1 {
   fill: #ededed;
   stroke: #fff;
@@ -163,7 +162,7 @@ img {
   stroke-width:2.33px;
 }
 
-// Button Styling --------------------------------------------------------------
+// Button Styling //
 .btn-eco,
 .btn-timer,
 .btn-power,
@@ -180,7 +179,7 @@ img {
 
 
 
-// START OF ECO AND TIMER PAGE STYLING
+// START OF ECO AND TIMER PAGE STYLING // // // // // // // // // // // // // //
 
 .usage-header,
 .preset-header {
@@ -215,12 +214,11 @@ img {
   margin-top: 10%;
 }
 
-// START of Eco Section
+// START of Eco Section --------------------------------------------------------
 .cont-eco-adjust{
   width: 100%;
   height: 30%;
-  display: flex;
-  flex-wrap: wrap;
+  @include flex-properties(flex, wrap, none, none);
   @extend %center-content;
   img {
     padding: 5%;
@@ -244,23 +242,20 @@ img {
   }
 }
 
-// START of Timer Section
+// START of Timer Section ------------------------------------------------------
 .cont-timer-adjust {
-  // background-color: blue;
   width: 100%;
   height: 59%;
   display: flex;
   flex-wrap: wrap;
+  // @include flex-properties(flex, wrap, none, none); this breaks design
 }
 .timer-heading {
-  // background-color: green;
   width: 100%;
   height: 50%;
-  display: flex;
-  flex-wrap: wrap;
+  @include flex-properties(flex, wrap, none, none);
   margin-left: 7%;
   img {
-    // background-color: yellow;
     width: 20%;
   }
   p {
@@ -268,14 +263,12 @@ img {
   }
 }
 .timer-adjust {
-  // background-color: yellow;
   width: 100%;
   height: 50%;
   @extend %center-content;
   table {
     margin: 12% 0 0 5%;
     width: 90%;
-    // border: 1px solid black;
   }
   td {
     padding-bottom: 5%;
