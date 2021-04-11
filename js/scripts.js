@@ -1,9 +1,5 @@
-$('#btnRedEco').hide();
-$('#btnRedTimer').hide();
-$('#btnPowerOn').hide();
+// navigation ------------------------------------------------------------------
 $('#navPopOut').hide();
-// $('.nav-pop-out').hide();
-
 
 $('#navBtn').click(function(){
   $('.nav-pop-out').show();
@@ -11,6 +7,13 @@ $('#navBtn').click(function(){
 $('#closeBtn').click(function(){
   $('.nav-pop-out').hide();
 });
+
+// remote button interactions --------------------------------------------------
+$('#btnRedEco').hide();
+$('#btnRedTimer').hide();
+$('#btnPowerOn').hide();
+
+
 
 $('#btnWhiteEco').click(function(){
   $('#btnWhiteEco').hide();
@@ -44,7 +47,7 @@ $('#btnPowerOn').click(function(){
   $('#btnPowerOff').show();
 });
 
-
+// arrow buttons push animation ----------
 $('#Arrow_Button_Up').click(function(){
   // $('.cls-1').css('fill','rgb(221, 41, 41)'); changes color
   var btn = $(".btn-arrow-up")
@@ -52,8 +55,28 @@ $('#Arrow_Button_Up').click(function(){
   btn.animate({opacity: 1}, 'fast')
 });
 $('#Arrow_Button_Down').click(function(){
-  // $('.cls-1').css('fill','rgb(221, 41, 41)'); changes color
   var btn = $(".btn-arrow-down")
   btn.animate({opacity: 0}, 'fast')
   btn.animate({opacity: 1}, 'fast')
+});
+
+
+
+
+// Eco timer page interactions -------------------------------------------------
+// need to figure out way to get this looping lol
+$('#btnAutoAdjust').click(function(){
+  $('.btn-auto-adjust').attr('src', 'graphics/Slide Button Off.svg')
+  $('#btnAutoAdjust').click(function(){
+    $('.btn-auto-adjust').attr('src', 'graphics/Slide Button On.svg')
+    $('#btnAutoAdjust').click(function(){
+      $('.btn-auto-adjust').attr('src', 'graphics/Slide Button Off.svg')
+      $('#btnAutoAdjust').click(function(){
+        $('.btn-auto-adjust').attr('src', 'graphics/Slide Button On.svg')
+        $('#btnAutoAdjust').click(function(){
+          $('.btn-auto-adjust').attr('src', 'graphics/Slide Button Off.svg')
+        });
+      });
+    });
+  });
 });

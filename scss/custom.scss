@@ -118,7 +118,7 @@ img {
 .cont-left-buttons {
   display: flex;
   flex-wrap: wrap;
-  // @include flex-properties(flex, wrap, none, none); this breaks the design
+  // @include flex-properties(flex, wrap, none, none); breaks design, unsure why
   width: 65%;
   height: 70%;
   padding-left: 5%;
@@ -240,15 +240,21 @@ img {
   td {
     padding-top: 5%;
   }
+  img {
+    width: 100%;
+  }
 }
-
+.max-time {
+  text-transform: uppercase;
+  color: $main-red;
+}
 // START of Timer Section ------------------------------------------------------
 .cont-timer-adjust {
   width: 100%;
   height: 59%;
   display: flex;
   flex-wrap: wrap;
-  // @include flex-properties(flex, wrap, none, none); this breaks design
+  // @include flex-properties(flex, wrap, none, none); breaks design, unsure why
 }
 .timer-heading {
   width: 100%;
@@ -267,10 +273,45 @@ img {
   height: 50%;
   @extend %center-content;
   table {
-    margin: 12% 0 0 5%;
+    margin: 15% 0 0 12%;
     width: 90%;
   }
   td {
-    padding-bottom: 5%;
+    padding-bottom: 7%;
+    text-transform: uppercase;
+    font-size: .7rem;
   }
+}
+.date {
+  color: $main-red;
+}
+
+
+
+// START OF SETTINGS PAGE STYLING // // // // // // // // // // // // // // // /
+
+.cont-profile {
+  // background-color: yellow;
+  height: 30%;
+}
+.profile-info {
+  font-size: 1.2rem;
+  // background-color: pink;
+  margin-left: 15%;
+  table {
+    margin: 0;
+  }
+  td {
+    padding-top: 5%;
+  }
+}
+.cont-connected-devices {
+  background-color: red;
+  height: 25%;
+}
+
+
+.cont-preferences {
+  background-color: green;
+  height: 25%;
 }

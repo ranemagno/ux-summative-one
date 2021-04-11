@@ -194,6 +194,12 @@ img {
     height: 100%; }
   .eco-adjust td {
     padding-top: 5%; }
+  .eco-adjust img {
+    width: 100%; }
+
+.max-time {
+  text-transform: uppercase;
+  color: #dd2929; }
 
 .cont-timer-adjust {
   width: 100%;
@@ -218,9 +224,33 @@ img {
   width: 100%;
   height: 50%; }
   .timer-adjust table {
-    margin: 12% 0 0 5%;
+    margin: 15% 0 0 12%;
     width: 90%; }
   .timer-adjust td {
-    padding-bottom: 5%; }
+    padding-bottom: 7%;
+    text-transform: uppercase;
+    font-size: .7rem; }
+
+.date {
+  color: #dd2929; }
+
+.cont-profile {
+  height: 30%; }
+
+.profile-info {
+  font-size: 1.2rem;
+  margin-left: 15%; }
+  .profile-info table {
+    margin: 0; }
+  .profile-info td {
+    padding-top: 5%; }
+
+.cont-connected-devices {
+  background-color: red;
+  height: 25%; }
+
+.cont-preferences {
+  background-color: green;
+  height: 25%; }
 
 /*# sourceMappingURL=custom.css.map */
