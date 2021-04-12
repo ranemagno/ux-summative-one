@@ -10,6 +10,7 @@
   <title>TRUST Smart Heatpump Settings</title>
 </head>
 <body>
+<!-- START of nav ------------------------------------------------------------->
   <div class="nav">
     <img src="graphics/Trust Logo.svg" alt="Trust Logo" id="trustLogo">
     <img src="graphics/Nav Icon.svg" alt="Navigation Button" id="navBtn">
@@ -22,11 +23,13 @@
       <a href="settings.html"><li>Settings</li></a>
     </ul>
   </div>
+<!-- END of nav --------------------------------------------------------------->
 
+<!-- START of Profile Info  --------------------------------------------------->
   <div class="cont-profile">
     <div class="profile-img">
-      <svg height="110" width="200">
-        <circle cx="100" cy="55" r="50" stroke="black" stroke-width="1" fill="none" />
+      <svg height="110" width="500">
+        <circle cx="170" cy="55" r="50" stroke="black" stroke-width="1" fill="none" />
       </svg>
     </div>
     <div class="profile-info">
@@ -43,12 +46,66 @@
       </table>
     </div>
   </div>
-  <div class="cont-connected-devices"></div>
-  <div class="cont-preferences"></div>
-  <div class="cont-more"></div>
-  <!-- END of nav ------------------------------------------------------------->
+  <!-- END of container profile -->
+<!-- END of Profile Info  ----------------------------------------------------->
 
-  <!-- scripts -->
+<!-- START of Connected Devices ----------------------------------------------->
+  <h3 class="headers">Connected Devices</h3>
+  <div class="cont-style cont-connected-devices">
+    <table>
+      <tr>
+        <td>John's Samsung S20</td>
+        <td>Button</td>
+      </tr>
+      <tr>
+        <td>Wall Tablet</td>
+        <td>Button</td>
+      </tr>
+      <tr>
+        <td>Add Device</td>
+        <td>+</td>
+      </tr>
+    </table>
+  </div>
+<!-- END of Connected Devices ------------------------------------------------->
+
+
+<!-- START of Preferences ----------------------------------------------------->
+  <h3 class="headers">Preferences</h3>
+  <div class="cont-style cont-preferences">
+    <table>
+      <tr>
+        <td>Language</td>
+        <td>English</td>
+      </tr>
+      <tr>
+        <td>Dark Mode</td>
+        <td>Button</td>
+      </tr>
+      <tr>
+        <td>Notification</td>
+        <td>button</td>
+      </tr>
+    </table>
+  </div>
+<!-- END of Preferences ------------------------------------------------------->
+
+
+<!-- START of More Section ----------------------------------------------------->
+  <h3 class="headers">More</h3>
+  <div class="cont-style cont-more">
+    <table>
+      <tr>
+        <td>Terms and Conditions</td>
+      </tr>
+      <tr>
+        <td>Help and FAQ's</td>
+      </tr>
+    </table>
+  </div>
+<!-- END of More Section ------------------------------------------------------>
+
+<!-- scripts - button interactions and animations ----------------------------->
   <script src="https://ajax.googleapis.com/ajax/libs/jquery/2.2.4/jquery.min.js"></script>
   <script src="js/scripts.js"></script>
 </body>

@@ -9,7 +9,9 @@
   <link rel="stylesheet" href="css/custom.css">
   <title>TRUST Smart Heat Pump Usage and Presets</title>
 </head>
+
 <body>
+<!-- START of nav ------------------------------------------------------------->
   <div class="nav">
     <img src="graphics/Trust Logo.svg" alt="Trust Logo" id="trustLogo">
     <img src="graphics/Nav Icon.svg" alt="Navigation Button" id="navBtn">
@@ -22,9 +24,9 @@
       <a href="settings.html"><li>Settings</li></a>
     </ul>
   </div>
-  <!-- END of nav ------------------------------------------------------------->
+<!-- END of nav --------------------------------------------------------------->
 
-
+<!-- START of Usage info section ---------------------------------------------->
     <div class="usage-header">
       <h3>Daily Avg Usage</h3>
     </div>
@@ -36,8 +38,9 @@
     <div class="preset-header">
       <h3>Preset Adjustments</h3>
     </div>
+<!-- END of Usage info section ------------------------------------------------>
 
-
+<!-- START of Preset Adjustments section -------------------------------------->
     <div class="cont-presets">
 
       <div class="cont-eco-adjust">
@@ -57,10 +60,11 @@
               </tr>
             </table>
           </div>
+          <!-- END of eco adjust -->
         </div>
-        <!-- END of eco adjust container -->
+        <!-- END of container eco content -->
       </div>
-      <!-- END of eco adjust container -->
+      <!-- END of container eco adjust -->
 
 
       <div class="cont-timer-adjust">
@@ -94,12 +98,14 @@
               </tr>
             </table>
           </div>
+          <!-- END of timer adjust -->
         </div>
-
+        <!-- END of cont timer-adjust -->
     </div>
-    <!-- END of eco timer container -->
+    <!-- END of cont presets container -->
+<!-- END of Preset Adjustment section ----------------------------------------->
 
-  <!-- scripts -->
+<!-- scripts - button interactions and animations ----------------------------->
   <script src="https://ajax.googleapis.com/ajax/libs/jquery/2.2.4/jquery.min.js"></script>
   <script src="js/scripts.js"></script>
 </body>

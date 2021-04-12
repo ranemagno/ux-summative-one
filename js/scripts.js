@@ -13,41 +13,34 @@ $('#btnRedEco').hide();
 $('#btnRedTimer').hide();
 $('#btnPowerOn').hide();
 
-
-
 $('#btnWhiteEco').click(function(){
   $('#btnWhiteEco').hide();
   $('#btnRedEco').show();
   $('#btnRedEco').css('filter', 'none');
 });
-
 $('#btnRedEco').click(function(){
   $('#btnRedEco').hide();
   $('#btnWhiteEco').show();
 });
-
 $('#btnWhiteTimer').click(function(){
   $('#btnWhiteTimer').hide();
   $('#btnRedTimer').show();
   $('#btnRedTimer').css('filter', 'none');
 });
-
 $('#btnRedTimer').click(function(){
   $('#btnRedTimer').hide();
   $('#btnWhiteTimer').show();
 });
-
 $('#btnPowerOff').click(function(){
   $('#btnPowerOff').hide();
   $('#btnPowerOn').show();
 });
-
 $('#btnPowerOn').click(function(){
   $('#btnPowerOn').hide();
   $('#btnPowerOff').show();
 });
 
-// arrow buttons push animation ----------
+// arrow buttons push animation -----------------------------------------------
 $('#Arrow_Button_Up').click(function(){
   // $('.cls-1').css('fill','rgb(221, 41, 41)'); changes color
   var btn = $(".btn-arrow-up")
