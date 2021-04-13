@@ -1,4 +1,4 @@
-$main-red: rgb(221, 41, 41);
+$main-red: #e02626;
 $white: rgb(240, 240, 240);
 $gray: rgb(163, 163, 163);
 
@@ -288,7 +288,9 @@ img {
 
 
 
-// START OF SETTINGS PAGE STYLING // // // // // // // // // // // // // // // /
+// // // // // // // // // // // // // // // // // // // // // // // // // // //
+// START OF SETTING PAGE STYLING // // // // // // // // // // // // // //
+// // // // // // // // // // // // // // // // // // // // // // // // // // //
 .cont-style {
     border-top: 1px solid $gray;
     @include flex-properties(flex, 0, center, 0);
@@ -314,14 +316,30 @@ img {
 .cont-connected-devices {
   height: 23%;
   margin: 3% 5% 0 5%;
-
+  table {
+    width: 100%;
+  }
+  td {
+    padding: 5% 0 5% 0;
+  }
+  img {
+    width: 17%;
+  }
 }
 .cont-preferences {
   height: 23%;
   margin: 3% 5% 0 5%;
+  table {
+    width: 100%;
+  }
+  td {
+    padding: 5% 0 5% 0;
+  }
+  img {
+    width: 12%;
+  }
 }
 .cont-more {
-  // background-color: pink;
   height: 13%;
   margin: 3% 5% 0 5%;
   table {
@@ -339,4 +357,7 @@ img {
   text-transform: uppercase;
   letter-spacing: .2rem;
   background-color: $white;
+}
+#tableRight {
+  text-align: right;
 }

@@ -255,10 +255,22 @@ img {
 .cont-connected-devices {
   height: 23%;
   margin: 3% 5% 0 5%; }
+  .cont-connected-devices table {
+    width: 100%; }
+  .cont-connected-devices td {
+    padding: 5% 0 5% 0; }
+  .cont-connected-devices img {
+    width: 17%; }
 
 .cont-preferences {
   height: 23%;
   margin: 3% 5% 0 5%; }
+  .cont-preferences table {
+    width: 100%; }
+  .cont-preferences td {
+    padding: 5% 0 5% 0; }
+  .cont-preferences img {
+    width: 12%; }
 
 .cont-more {
   height: 13%;
@@ -276,5 +288,8 @@ img {
   text-transform: uppercase;
   letter-spacing: .2rem;
   background-color: #f0f0f0; }
+
+#tableRight {
+  text-align: right; }
 
 /*# sourceMappingURL=custom.css.map */
