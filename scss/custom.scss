@@ -86,6 +86,9 @@ img {
     text-transform: uppercase;
     text-decoration: none;
   }
+  a {
+    text-decoration: none;
+  }
 }
 
 // START of temp and knob ------------------------------------------------------
@@ -151,7 +154,7 @@ img {
   fill: #ededed;
   stroke: #fff;
   stroke-miterlimit: 10;
-  stroke-width:2.33px;
+  stroke-width: 2.33px;
 }
 
 // Button Styling //
@@ -204,7 +207,7 @@ img {
   }
 }
 .preset-header {
-  margin-top: 4%;
+  margin-top: 6%;
   padding: 0 3% 0 3%;
 }
 .cont-presets {
@@ -243,6 +246,9 @@ img {
   img {
     width: 100%;
   }
+}
+#btnEcoAutoAdjust {
+  width: 200%;
 }
 .max-time {
   text-transform: uppercase;
@@ -293,7 +299,7 @@ img {
 // // // // // // // // // // // // // // // // // // // // // // // // // // //
 .cont-style {
     border-top: 1px solid $gray;
-    @include flex-properties(flex, 0, center, 0);
+    @include flex-properties(flex, none, center, none);
 }
 
 
@@ -360,4 +366,123 @@ img {
 }
 #tableRight {
   text-align: right;
+}
+
+
+
+
+
+// Responsive Code for Tablet Devices // // // // // // // // // // // // // //
+
+@media only screen and (min-width: 700px) {
+
+// navigation ------------------------------------------------------------------
+  .nav-pop-out {
+    ul li {
+      line-height: 200%;
+    }
+  }
+  // remote page ---------------------------------------------------------------
+  .temp {
+    height: 13vh;
+  }
+  .knob {
+    width: 50%;
+  }
+  .cont-left-buttons {
+    width: 50%;
+  }
+  .cont-arrows {
+    padding: 7% 0 0 15%;
+    width: 18%;
+  }
+
+  // eco and timer mode page ---------------------------------------------------
+  .usage-info {
+    img {
+      margin: 10% 0 0 24%;
+      width: 50%;
+    }
+  }
+  .preset-header {
+    margin: 7.5% 0 0 5%;
+  }
+  .cont-eco-adjust {
+    height: 32%;
+  }
+  .eco-icon {
+    margin-left: 1.5%;
+    width: 19%;
+  }
+  .eco-adjust {
+    td {
+      padding-top: 0%;
+    }
+  }
+  .cont-timer-adjust {
+    height: 30%;
+  }
+  .timer-heading {
+    img {
+      width: 10%;
+    }
+    p {
+      margin: 3% 0 0 5%;
+    }
+  }
+  .timer-adjust {
+    table {
+      margin-left: 21%;
+      width: 80%;
+    }
+    td {
+      padding: 5% 0 0 0;
+    }
+  }
+
+  // settings page -------------------------------------------------------------
+  .cont-profile {
+    height: 27%;
+  }
+  .profile-img {
+    margin-left: 24%;
+  }
+  .profile-info {
+    td {
+      padding-top: 12%;
+    }
+  }
+  .cont-connected-devices {
+    td {
+      padding: 4% 0 3% 0;
+    }
+  }
+  .cont-preferences {
+    td {
+      padding: 4% 0 3% 0;
+    }
+  }
+  .cont-more {
+    height: 13%;
+    margin: 3% 5% 0 5%;
+    table {
+      padding-top: 0;
+    }
+    td {
+      padding-bottom: 10%;
+    }
+  }
+  .headers {
+    position: absolute;
+    padding: 0 3% 0 3%;
+    margin: 2% 0 0 10%;
+    font-size: .7rem;
+    text-transform: uppercase;
+    letter-spacing: .2rem;
+    background-color: $white;
+  }
+  #tableRight {
+    text-align: right;
+  }
+
 }

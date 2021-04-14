@@ -55,7 +55,7 @@ img {
   width: 10%; }
 
 .nav-pop-out {
-  background-color: #dd2929;
+  background-color: #e02626;
   width: 50%;
   height: 23%;
   position: absolute;
@@ -72,6 +72,8 @@ img {
     list-style: none;
     color: #f0f0f0;
     text-transform: uppercase;
+    text-decoration: none; }
+  .nav-pop-out a {
     text-decoration: none; }
 
 .temp {
@@ -161,7 +163,7 @@ img {
     margin: 15% 0 0 7%; }
 
 .preset-header {
-  margin-top: 4%;
+  margin-top: 6%;
   padding: 0 3% 0 3%; }
 
 .cont-presets {
@@ -197,9 +199,12 @@ img {
   .eco-adjust img {
     width: 100%; }
 
+#btnEcoAutoAdjust {
+  width: 200%; }
+
 .max-time {
   text-transform: uppercase;
-  color: #dd2929; }
+  color: #e02626; }
 
 .cont-timer-adjust {
   width: 100%;
@@ -232,14 +237,14 @@ img {
     font-size: .7rem; }
 
 .date {
-  color: #dd2929; }
+  color: #e02626; }
 
 .cont-style {
   border-top: 1px solid #a3a3a3;
   display: flex;
-  flex: 0;
+  flex: none;
   align-items: center;
-  justify-content: 0; }
+  justify-content: none; }
 
 .cont-profile {
   height: 29%;
@@ -291,5 +296,88 @@ img {
 
 #tableRight {
   text-align: right; }
+
+@media only screen and (min-width: 700px) {
+  .nav-pop-out ul li {
+    line-height: 200%; }
+
+  .temp {
+    height: 13vh; }
+
+  .knob {
+    width: 50%; }
+
+  .cont-left-buttons {
+    width: 50%; }
+
+  .cont-arrows {
+    padding: 7% 0 0 15%;
+    width: 18%; }
+
+  .usage-info img {
+    margin: 10% 0 0 24%;
+    width: 50%; }
+
+  .preset-header {
+    margin: 7.5% 0 0 5%; }
+
+  .cont-eco-adjust {
+    height: 32%; }
+
+  .eco-icon {
+    margin-left: 1.5%;
+    width: 19%; }
+
+  .eco-adjust td {
+    padding-top: 0%; }
+
+  .cont-timer-adjust {
+    height: 30%; }
+
+  .timer-heading img {
+    width: 10%; }
+  .timer-heading p {
+    margin: 3% 0 0 5%; }
+
+  .timer-adjust table {
+    margin-left: 21%;
+    width: 80%; }
+  .timer-adjust td {
+    padding: 5% 0 0 0; }
+
+  .cont-profile {
+    height: 27%; }
+
+  .profile-img {
+    margin-left: 24%; }
+
+  .profile-info td {
+    padding-top: 12%; }
+
+  .cont-connected-devices td {
+    padding: 4% 0 3% 0; }
+
+  .cont-preferences td {
+    padding: 4% 0 3% 0; }
+
+  .cont-more {
+    height: 13%;
+    margin: 3% 5% 0 5%; }
+    .cont-more table {
+      padding-top: 0; }
+    .cont-more td {
+      padding-bottom: 10%; }
+
+  .headers {
+    position: absolute;
+    padding: 0 3% 0 3%;
+    margin: 2% 0 0 10%;
+    font-size: .7rem;
+    text-transform: uppercase;
+    letter-spacing: .2rem;
+    background-color: #f0f0f0; }
+
+  #tableRight {
+    text-align: right; } }
 
 /*# sourceMappingURL=custom.css.map */
